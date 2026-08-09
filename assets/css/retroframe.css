@@ -91,7 +91,7 @@ body[data-page="home"] .page {
 .topbar {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
   gap: 14px;
   padding: 6px 10px;
   border-bottom: 1px solid rgba(194, 198, 202, 0.9);

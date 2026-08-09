@@ -11,7 +11,9 @@ module.exports = {
     footerSuffix: "构建，并根据个人学术与项目经历进行了定制。"
   },
   topbar: {
-    prefix: "成都时间"
+    prefix: "成都时间",
+    latestBlogLabel: "返回新版博客",
+    latestBlogHref: "https://624work.club/"
   },
   banner: {
     title: "陈恺义",

@@ -271,6 +271,7 @@ ${renderLanguageSwitch(relativePath)}
 function renderTopbar(relativePath) {
   const copy = uiCopy[activeLocale];
   return `    <div class="topbar">
+      <a class="topbar-link" href="${escapeHtml(siteConfig.topbar.latestBlogHref)}">${escapeHtml(siteConfig.topbar.latestBlogLabel)}</a>
       <span class="topbar-item"><span class="topbar-text">${escapeHtml(siteConfig.topbar.prefix)}${activeLocale === "zh" ? "：" : ":"}</span><img class="topbar-icon" id="local-weather-icon" src="https://cdn.jsdelivr.net/gh/basmilius/weather-icons/production/fill/all/partly-cloudy-day.svg" alt=""><span id="local-status">${copy.loading}</span></span>
     </div>`;
 }

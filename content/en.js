@@ -10,7 +10,8 @@ module.exports = {
       footerSuffix: "and customized around my research and projects."
     },
     topbar: {
-      prefix: "Chengdu time"
+      prefix: "Chengdu time",
+      latestBlogLabel: "Latest Blog"
     },
     banner: {
       title: "Kaiyi Chen",
