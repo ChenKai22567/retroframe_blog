@@ -1,95 +1,113 @@
 <!-- index.html developed by Bob Tianqi Wei -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN" data-locale="zh">
 <head>
   <meta charset="utf-8">
-  <title>About | Retroframe</title>
-  <meta name="description" content="A retro portfolio template for researchers and engineers, with a simple file-based content system for projects, publications, and personal links.">
+  <title>关于我 | 陈恺义 · Kaiyi Chen</title>
+  <meta name="description" content="陈恺义的个人主页，记录科学计量学、知识管理、复杂网络分析与信息系统项目。">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="关于我 | 陈恺义 · Kaiyi Chen">
+  <meta property="og:description" content="陈恺义的个人主页，记录科学计量学、知识管理、复杂网络分析与信息系统项目。">
+  <meta property="og:image" content="https://blog.624work.club/assets/images/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="关于我 | 陈恺义 · Kaiyi Chen">
+  <meta name="twitter:description" content="陈恺义的个人主页，记录科学计量学、知识管理、复杂网络分析与信息系统项目。">
+  <meta name="twitter:image" content="https://blog.624work.club/assets/images/og.png">
+  <link rel="icon" href="../assets/images/kaiyi-mark.png">
+  <link rel="alternate" hreflang="zh-CN" href="../about/index.html">
+  <link rel="alternate" hreflang="en" href="../en/about/index.html">
+  <script>(function(){try{var saved=localStorage.getItem("retroframe-language");var preferred=saved||"en";if(preferred!=="zh"){location.replace("../en/about/index.html");}}catch(error){}})();</script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="../assets/css/retroframe.css" rel="stylesheet" type="text/css">
 </head>
 <body data-page="project" data-theme="slate-ice">
   <div class="page">
     <div class="topbar">
-      <span class="topbar-item"><a class="topbar-link" href="https://github.com/bobtianqiwei/retroframe" target="_blank" rel="noreferrer">Retroframe</a><span class="topbar-text">is built in San Francisco:</span><img class="topbar-icon" id="sf-weather-icon" src="https://cdn.jsdelivr.net/gh/basmilius/weather-icons/production/fill/all/partly-cloudy-day.svg" alt=""><span id="sf-status">loading...</span></span>
+      <span class="topbar-item"><span class="topbar-text">成都时间：</span><img class="topbar-icon" id="local-weather-icon" src="https://cdn.jsdelivr.net/gh/basmilius/weather-icons/production/fill/all/partly-cloudy-day.svg" alt=""><span id="local-status">加载中...</span></span>
     </div>
 <div class="nav">
-  <a href="../index.html">Home</a>
-  <a href="../about/index.html">About</a>
-  <a href="../publications/index.html">Publications</a>
-  <a href="../projects/index.html">Projects</a>
-  <a href="https://example.com/cv" target="_blank" rel="noreferrer">CV</a>
-  <a href="https://scholar.google.com" target="_blank" rel="noreferrer">Scholar</a>
-  <a href="https://github.com/example" target="_blank" rel="noreferrer">GitHub</a>
-  <a href="https://example.edu/people/jianyu-chen" target="_blank" rel="noreferrer">Department</a>
+<div class="nav-links">
+  <a href="../index.html">首页</a>
+  <a href="../about/index.html">关于我</a>
+  <a href="../publications/index.html">学术论文</a>
+  <a href="../projects/index.html">项目</a>
+  <a href="../about/index.html#education">简历</a>
+  <a href="https://github.com/ChenKai22567" target="_blank" rel="noreferrer">GitHub</a>
+  <a href="https://orcid.org/0009-0003-5217-7238" target="_blank" rel="noreferrer">ORCID</a>
+  <a href="mailto:kaiyi0365@163.com">邮箱</a>
+</div>
+<div class="language-switch" aria-label="Language">
+  <a href="../about/index.html" lang="zh-CN" data-language="zh" aria-current="page">中文</a>
+  <span aria-hidden="true">/</span>
+  <a href="../en/about/index.html" lang="en" data-language="en">EN</a>
+</div>
 </div>
     <table class="content">
       <tr>
         <td class="sidebar">
           <div class="box">
-            <div class="box-title">Browse</div>
+            <div class="box-title">浏览</div>
             <div class="box-body mini-nav">
-              <a href="../index.html">Home</a>
-              <a href="#section-1">Biography</a>
-              <a href="#section-2">Research Focus</a>
-              <a href="#section-3">Collaboration</a>
-              <a href="../publications/index.html">Publications</a>
-              <a href="../projects/index.html">Projects</a>
+              <a href="../index.html">首页</a>
+              <a href="#biography">个人简介</a>
+              <a href="#research">研究方向</a>
+              <a href="#education">教育背景</a>
+              <a href="../publications/index.html">学术论文</a>
+              <a href="../projects/index.html">项目</a>
             </div>
           </div>
           <div class="box">
-            <div class="box-title">Profile</div>
-            <div class="box-body">
-              <img class="profile-photo" src="../assets/images/profile/demo-avatar-unsplash.jpg" alt="Demo portrait for the Retroframe professor and research engineer template">
-              <p><strong>Name:</strong> Dr. Jianyu Chen</p>
-              <p><strong>Title:</strong> Assistant Professor of Computer Science</p>
-              <p><strong>Affiliation:</strong> Example University</p>
-              <p><strong>Location:</strong> San Francisco Bay Area</p>
-            </div>
-          </div>
-          <div class="box">
-            <div class="box-title">Quick Links</div>
+            <div class="box-title">快速链接</div>
             <div class="box-body">
               <ul class="plain-list">
-                <li><a href="../index.html">Back to Home</a></li>
-                <li><a href="https://example.com/cv" target="_blank" rel="noreferrer">CV PDF</a></li>
-                <li><a href="https://scholar.google.com" target="_blank" rel="noreferrer">Google Scholar</a></li>
-                <li><a href="https://www.semanticscholar.org" target="_blank" rel="noreferrer">Semantic Scholar</a></li>
-                <li><a href="https://github.com/example" target="_blank" rel="noreferrer">GitHub Profile</a></li>
-                <li><a href="https://example.edu/people/jianyu-chen" target="_blank" rel="noreferrer">Department Page</a></li>
-                <li><a href="mailto:jianyu.chen@example.edu">Email</a></li>
+                <li><a href="../index.html">返回首页</a></li>
+                <li><a href="https://624work.club/" target="_blank" rel="noreferrer">个人主页</a></li>
+                <li><a href="https://github.com/ChenKai22567" target="_blank" rel="noreferrer">GitHub</a></li>
+                <li><a href="../about/index.html#education">查看简历</a></li>
+                <li><a href="mailto:kaiyi0365@163.com">发送邮件</a></li>
               </ul>
+            </div>
+          </div>
+          <div class="box">
+            <div class="box-title">个人资料</div>
+            <div class="box-body">
+              <img class="profile-photo" src="../assets/images/kaiyi-chen.webp" alt="陈恺义个人头像">
+              <p><strong>姓名:</strong> 陈恺义</p>
+              <p><strong>身份:</strong> 信息资源管理硕士</p>
+              <p><strong>学校:</strong> 四川大学</p>
+              <p><strong>地点:</strong> 中国 · 成都</p>
             </div>
           </div>
         </td>
         <td class="main">
           <div class="project-header">
-            <h1 class="project-header-title">About</h1>
-            <p class="project-header-headline">A longer biography page for researchers, professors, and research engineers who need more than a short homepage introduction.</p>
+            <h1 class="project-header-title">关于我</h1>
+            <p class="project-header-headline">研究背景、研究方向与教育经历。</p>
           </div>
-          <div class="box" id="section-1">
-            <div class="box-title">Biography</div>
+          <div class="box" id="biography">
+            <div class="box-title">个人简介</div>
             <div class="box-body">
-              <div class="project-richtext"><p>Jianyu Chen is an assistant professor of computer science whose work sits at the intersection of human-AI interaction, research infrastructure, and machine learning evaluation.</p><p>His research asks how intelligent systems can support real scientific and engineering work without making those workflows harder to inspect, trust, or revise.</p></div>
+              <div class="project-richtext"><p>硕士毕业于四川大学信息资源管理专业，师从姚乐野教授。</p><p>曾获硕士研究生国家奖学金、四川大学优秀毕业研究生。</p><p>主要研究方向为科学计量学与知识管理。</p></div>
             </div>
           </div>
-          <div class="box" id="section-2">
-            <div class="box-title">Research Focus</div>
+          <div class="box" id="research">
+            <div class="box-title">研究方向</div>
             <div class="box-body">
-              <div class="project-richtext"><p>His recent work focuses on evaluation methods for interactive AI systems, retrieval and memory support for research teams, and interfaces for inspecting agent behavior in practical settings.</p><p>Across these projects, the larger goal is to build systems that are technically capable while still remaining legible to the people who depend on them.</p></div>
+              <div class="project-richtext"><p>科技情报分析与科学大数据挖掘；复杂网络与社会网络分析；信息系统管理与设计；知识管理。</p></div>
             </div>
           </div>
-          <div class="box" id="section-3">
-            <div class="box-title">Collaboration</div>
+          <div class="box" id="education">
+            <div class="box-title">教育背景</div>
             <div class="box-body">
-              <div class="project-richtext"><p>He works with students, engineers, and researchers on projects involving agentic systems, human-AI workflows, and infrastructure for experimentation.</p><p>This page is included in Retroframe because a strong research portfolio often needs a dedicated About page in addition to a concise homepage summary.</p></div>
+              <div class="project-richtext"><p>2023.09—2026.06，四川大学图书情报专业，管理学硕士。</p><p>2019.09—2023.06，四川大学信息资源管理专业，管理学学士。</p></div>
             </div>
           </div>
         </td>
       </tr>
     </table>
-    <div class="footer">Built from <a href="https://github.com/bobtianqiwei/retroframe" target="_blank" rel="noreferrer">github.com/bobtianqiwei/retroframe</a></div>
+    <div class="footer">本站基于 <a href="https://github.com/bobtianqiwei/retroframe" target="_blank" rel="noreferrer">Retroframe</a> 构建，并根据个人学术与项目经历进行了定制。</div>
   </div>
   <script src="../assets/js/status-bar.js" defer></script>
+  <script src="../assets/js/language.js" defer></script>
 </body>
 </html>

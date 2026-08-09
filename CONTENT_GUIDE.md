@@ -1,55 +1,32 @@
-# Content Guide
+# 内容维护指南
 
-Retroframe is meant to be edited through data files, not by hand-editing generated HTML.
+本站页面由结构化内容文件生成，不应直接修改生成后的 HTML。
 
-## 1. Site-wide content
+## 站点内容
 
-Edit `content/site.js` for:
+- `content/site.js`：中文站点信息、首页内容、个人资料与链接。
+- `content/en.js`：对应的英文内容。
+- `content/projects/*.js`：中文项目与论文详情。
+- `content/projects/_template.js`：新增项目时可复制的字段模板。
 
-- site title and browser metadata
-- banner text
-- profile box
-- quick links and contact info
-- logo strip
-- homepage news ticker
+中英文内容应保持项目数量、链接目标与信息层级一致。
 
-## 2. Projects
-
-Each file in `content/projects/` defines one project.
-
-Important fields:
-
-- `slug`: output folder under `projects/`
-- `title`: project title
-- `summary`: short homepage summary
-- `thumbnail`: homepage image
-- `featured`: whether it appears in the large homepage table
-- `selected`: whether it appears in the lower project list
-- `page`: full project page content
-
-Use `content/projects/_template.js` when you add a new one.
-
-## 3. Build output
-
-Run:
+## 构建
 
 ```bash
 npm run build
 ```
 
-This regenerates:
+构建会生成或更新：
 
-- `index.html`
-- `projects/<slug>/index.html`
+- 中文首页及 `about/`、`projects/`、`publications/`
+- 英文首页及 `en/` 下的对应页面
 
-## 4. Asset management
+生成页面应与内容源一并提交，方便静态托管环境直接发布。
 
-Put reusable images in `assets/images/`.
+## 图片与资源
 
-Recommended structure:
-
-- `assets/images/profile/`
-- `assets/images/logos/`
-- `assets/images/projects/`
-
-The current demo still uses a mostly flat image structure so the extracted visuals remain easy to compare with the original source.
+- 共用图片存放在 `assets/images/`。
+- 共用样式与脚本分别存放在 `assets/css/` 和 `assets/js/`。
+- 新增资源前先确认现有文件不能复用；删除内容后同步移除不再引用的资源。
+- 不要提交原始设计稿、临时导出文件、服务器配置、密钥或本机路径。

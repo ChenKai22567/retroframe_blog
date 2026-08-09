@@ -1,132 +1,149 @@
 <!-- index.html developed by Bob Tianqi Wei -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN" data-locale="zh">
 <head>
   <meta charset="utf-8">
-  <title>Retroframe | Retro Portfolio Template for Researchers and Engineers</title>
-  <meta name="description" content="A retro portfolio template for researchers and engineers, with a simple file-based content system for projects, publications, and personal links.">
+  <title>陈恺义 | 科学计量、知识管理与信息系统</title>
+  <meta name="description" content="陈恺义的个人主页，记录科学计量学、知识管理、复杂网络分析与信息系统项目。">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="陈恺义 | 科学计量、知识管理与信息系统">
+  <meta property="og:description" content="陈恺义的个人主页，记录科学计量学、知识管理、复杂网络分析与信息系统项目。">
+  <meta property="og:image" content="https://blog.624work.club/assets/images/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="陈恺义 | 科学计量、知识管理与信息系统">
+  <meta name="twitter:description" content="陈恺义的个人主页，记录科学计量学、知识管理、复杂网络分析与信息系统项目。">
+  <meta name="twitter:image" content="https://blog.624work.club/assets/images/og.png">
+  <link rel="icon" href="./assets/images/kaiyi-mark.png">
+  <link rel="alternate" hreflang="zh-CN" href="./index.html">
+  <link rel="alternate" hreflang="en" href="./en/index.html">
+  <script>(function(){try{var saved=localStorage.getItem("retroframe-language");var preferred=saved||"en";if(preferred!=="zh"){location.replace("./en/index.html");}}catch(error){}})();</script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="./assets/css/retroframe.css" rel="stylesheet" type="text/css">
 </head>
 <body data-page="home">
   <div class="page">
     <div class="topbar">
-      <span class="topbar-item"><a class="topbar-link" href="https://github.com/bobtianqiwei/retroframe" target="_blank" rel="noreferrer">Retroframe</a><span class="topbar-text">is built in San Francisco:</span><img class="topbar-icon" id="sf-weather-icon" src="https://cdn.jsdelivr.net/gh/basmilius/weather-icons/production/fill/all/partly-cloudy-day.svg" alt=""><span id="sf-status">loading...</span></span>
+      <span class="topbar-item"><span class="topbar-text">成都时间：</span><img class="topbar-icon" id="local-weather-icon" src="https://cdn.jsdelivr.net/gh/basmilius/weather-icons/production/fill/all/partly-cloudy-day.svg" alt=""><span id="local-status">加载中...</span></span>
     </div>
     <div class="banner">
-      <h1>Retroframe</h1>
-      <p>A retro academic-style portfolio template for professors, research engineers, and technical builders.</p>
+      <h1>陈恺义</h1>
+      <p>科学计量 · 知识管理 · 复杂网络 · 信息系统</p>
     </div>
 <div class="nav">
-  <a href="./index.html">Home</a>
-  <a href="./about/index.html">About</a>
-  <a href="./publications/index.html">Publications</a>
-  <a href="./projects/index.html">Projects</a>
-  <a href="https://example.com/cv" target="_blank" rel="noreferrer">CV</a>
-  <a href="https://scholar.google.com" target="_blank" rel="noreferrer">Scholar</a>
-  <a href="https://github.com/example" target="_blank" rel="noreferrer">GitHub</a>
-  <a href="https://example.edu/people/jianyu-chen" target="_blank" rel="noreferrer">Department</a>
+<div class="nav-links">
+  <a href="./index.html">首页</a>
+  <a href="./about/index.html">关于我</a>
+  <a href="./publications/index.html">学术论文</a>
+  <a href="./projects/index.html">项目</a>
+  <a href="./about/index.html#education">简历</a>
+  <a href="https://github.com/ChenKai22567" target="_blank" rel="noreferrer">GitHub</a>
+  <a href="https://orcid.org/0009-0003-5217-7238" target="_blank" rel="noreferrer">ORCID</a>
+  <a href="mailto:kaiyi0365@163.com">邮箱</a>
+</div>
+<div class="language-switch" aria-label="Language">
+  <a href="./index.html" lang="zh-CN" data-language="zh" aria-current="page">中文</a>
+  <span aria-hidden="true">/</span>
+  <a href="./en/index.html" lang="en" data-language="en">EN</a>
+</div>
 </div>
     <div class="best-viewed" aria-live="polite">
-      <span class="best-viewed-label">News</span>
-      <span class="best-viewed-text" id="news-ticker">Loading updates...</span>
+      <span class="best-viewed-label">动态</span>
+      <span class="best-viewed-text" id="news-ticker">正在加载...</span>
     </div>
     <table class="content">
       <tr>
         <td class="sidebar">
-          <div class="box" id="profile">
-            <div class="box-title">Profile</div>
-            <div class="box-body">
-              <img class="profile-photo" src="./assets/images/profile/demo-avatar-unsplash.jpg" alt="Demo portrait for the Retroframe professor and research engineer template">
-              <p><strong>Name:</strong> Dr. Jianyu Chen</p>
-              <p><strong>Title:</strong> Assistant Professor of Computer Science</p>
-              <p><strong>Affiliation:</strong> Example University</p>
-              <p><strong>Location:</strong> San Francisco Bay Area</p>
-              <p><strong>Focus:</strong> Human-AI systems, machine learning evaluation, interactive systems, and research infrastructure</p>
-              <p><strong>Availability:</strong> Open to research collaborations, invited talks, and selective research engineering opportunities</p>
-            </div>
-          </div>
           <div class="box">
-            <div class="box-title">Quick Links</div>
+            <div class="box-title">快速链接</div>
             <div class="box-body">
-              <ul class="plain-list">
-                <li><a href="https://example.com/cv" target="_blank" rel="noreferrer">CV PDF</a></li>
-                <li><a href="https://scholar.google.com" target="_blank" rel="noreferrer">Google Scholar</a></li>
-                <li><a href="https://www.semanticscholar.org" target="_blank" rel="noreferrer">Semantic Scholar</a></li>
-                <li><a href="https://github.com/example" target="_blank" rel="noreferrer">GitHub Profile</a></li>
-                <li><a href="https://example.edu/people/jianyu-chen" target="_blank" rel="noreferrer">Department Page</a></li>
-                <li><a href="mailto:jianyu.chen@example.edu">Email</a></li>
+              <ul class="plain-list quick-links-grid">
+                <li><a href="https://624work.club/" target="_blank" rel="noreferrer">个人主页</a></li>
+                <li><a href="https://github.com/ChenKai22567" target="_blank" rel="noreferrer">GitHub</a></li>
+                <li><a href="./about/index.html#education">查看简历</a></li>
+                <li><a href="mailto:kaiyi0365@163.com">发送邮件</a></li>
               </ul>
             </div>
           </div>
-          <div class="box">
-            <div class="box-title">Contact</div>
+          <div class="box" id="profile">
+            <div class="box-title">个人资料</div>
             <div class="box-body">
-              <p><strong>Email:</strong> <a href="mailto:jianyu.chen@example.edu">jianyu.chen@example.edu</a></p>
-              <p><strong>Website:</strong> <a href="https://jianyuchen.org" target="_blank" rel="noreferrer">jianyuchen.org</a></p>
-              <p><strong>Scholar:</strong> <a href="https://scholar.google.com" target="_blank" rel="noreferrer">Google Scholar</a></p>
-              <p><strong>GitHub:</strong> <a href="https://github.com/example" target="_blank" rel="noreferrer">/example</a></p>
-              <p><strong>Department:</strong> <a href="https://example.edu/people/jianyu-chen" target="_blank" rel="noreferrer">example.edu/people/jianyu-chen</a></p>
+              <img class="profile-photo" src="./assets/images/kaiyi-chen.webp" alt="陈恺义个人头像">
+              <p><strong>姓名:</strong> 陈恺义</p>
+              <p><strong>身份:</strong> 信息资源管理硕士</p>
+              <p><strong>学校:</strong> 四川大学</p>
+              <p><strong>地点:</strong> 中国 · 成都</p>
+              <p><strong>方向:</strong> 科学计量学、知识管理、复杂网络与社会网络分析、信息系统设计</p>
+              <p><strong>交流:</strong> 欢迎围绕科研数据分析、知识组织与信息系统开展交流</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="box-title">联系方式</div>
+            <div class="box-body">
+              <p><strong>邮箱:</strong> <a href="mailto:kaiyi0365@163.com">kaiyi0365@163.com</a></p>
+              <p><strong>网站:</strong> <a href="https://624work.club/" target="_blank" rel="noreferrer">624work.club</a></p>
+              <p><strong>ORCID:</strong> <a href="https://orcid.org/0009-0003-5217-7238" target="_blank" rel="noreferrer">0009-0003-5217-7238</a></p>
+              <p><strong>GitHub:</strong> <a href="https://github.com/ChenKai22567" target="_blank" rel="noreferrer">@ChenKai22567</a></p>
             </div>
           </div>
         </td>
         <td class="main">
           <div class="box" id="about">
-            <div class="box-title">About</div>
+            <div class="box-title">关于我</div>
             <div class="box-body">
-<div class="intro-copy"><p>Jianyu Chen is a computer scientist working across human-AI interaction, machine learning systems, and evaluation. His research studies how intelligent tools can support real research and engineering tasks without making those workflows harder to understand or trust.</p><p>He builds interactive systems, research prototypes, and infrastructure for experimentation. His recent work focuses on retrieval, evaluation, agent workflows, and interfaces that help people inspect model behavior in practical settings.</p><p>This template is written as a realistic example for faculty, applied scientists, research engineers, and PhD students who want one site for biography, projects, publications, and contact information.</p></div>
+<div class="intro-copy"><p>硕士毕业于四川大学信息资源管理专业，师从姚乐野教授。</p><p>曾获硕士研究生国家奖学金、四川大学优秀毕业研究生。</p><p>主要研究方向为科学计量学与知识管理。</p></div>
             </div>
           </div>
           <div class="box" id="trusted">
-            <div class="box-title">Affiliations</div>
+            <div class="box-title">相关主页</div>
             <div class="box-body">
               <div class="trust-grid">
-                <a class="trust-item" href="https://www.apple.com" target="_blank" rel="noreferrer"><img src="./assets/images/logos/apple.svg" alt="Apple"></a>
-                <a class="trust-item" href="https://www.nvidia.com" target="_blank" rel="noreferrer"><img src="./assets/images/logos/nvidia.svg" alt="NVIDIA"></a>
-                <a class="trust-item" href="https://about.google" target="_blank" rel="noreferrer"><img src="./assets/images/logos/google.svg" alt="Google"></a>
-                <a class="trust-item" href="https://stripe.com" target="_blank" rel="noreferrer"><img src="./assets/images/logos/stripe.svg" alt="Stripe"></a>
-                <a class="trust-item" href="https://github.com" target="_blank" rel="noreferrer"><img src="./assets/images/logos/github.svg" alt="GitHub"></a>
-                <a class="trust-item" href="https://about.meta.com" target="_blank" rel="noreferrer"><img src="./assets/images/logos/meta.svg" alt="Meta"></a>
+                <a class="trust-item" href="https://624work.club/" target="_blank" rel="noreferrer"><img src="./assets/images/kaiyi-mark.png" alt="陈恺义个人主页"></a>
+                <a class="trust-item" href="https://github.com/ChenKai22567" target="_blank" rel="noreferrer"><img src="./assets/images/logos/github.svg" alt="GitHub"></a>
               </div>
             </div>
           </div>
-          <div class="box" id="publications">
-            <div class="box-title">Selected Publications</div>
-            <div class="box-body">
-              <table class="project-table">
-                <tr>
-                  <td><p class="project-title"><a href="./projects/situated-agents-paper/index.html">Situated Evaluation for Agentic Research Systems</a></p><p class="project-meta">Publication / CHI 2026</p><p class="project-submeta">Jianyu Chen, Mira Patel, Evan Brooks, and Lina Zhao | CHI 2026</p><p>A conference paper on evaluating agentic research systems with task context, human oversight, and longitudinal evidence.</p></td>
-                </tr>
-                <tr>
-                  <td><p class="project-title"><a href="./projects/lab-memory-paper/index.html">Retrieval as Memory Support for Research Teams</a></p><p class="project-meta">Publication / CSCW 2025</p><p class="project-submeta">Jianyu Chen, Priya Narang, and Daniel Wu | CSCW 2025</p><p>A paper on how retrieval interfaces help research teams recover context, revisit decisions, and reduce duplicated work.</p></td>
-                </tr>
-              </table>
-            </div>
-          </div>
           <div class="box" id="projects">
-            <div class="box-title">Selected Projects</div>
+            <div class="box-title">代表项目</div>
             <div class="box-body">
               <table class="feature-table">
                 <tr>
-                  <td class="thumb"><a href="./projects/research-observatory/index.html"><img src="./assets/images/research-engineer-desk.jpg" alt="Research Observatory"></a></td>
+                  <td class="thumb"><a href="./projects/lis-frontier/index.html"><img src="./assets/images/lis-frontier.png" alt="LIS 前沿文献追踪与智能周报界面"></a></td>
                   <td>
-                    <p class="project-title"><a href="./projects/research-observatory/index.html">Research Observatory</a></p>
-                    <p class="project-meta">Research platform / lab infrastructure</p>
-                    <p>A shared interface for tracking experiments, datasets, model versions, and open questions across a research group.</p>
+                    <p class="project-title"><a href="./projects/lis-frontier/index.html">LIS 前沿文献追踪与智能周报</a></p>
+                    <p class="project-meta">学术情报系统 / 全栈项目</p>
+                    <p>自动更新的图书情报学前沿文献库与智能周报，支持双语检索、相关性分级与可追溯的趋势总结。</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="thumb"><a href="./projects/talent-policy-guide/index.html"><img src="./assets/images/talent-policy-guide.png" alt="人才政策服务指南界面"></a></td>
+                  <td>
+                    <p class="project-title"><a href="./projects/talent-policy-guide/index.html">人才政策服务指南</a></p>
+                    <p class="project-meta">政策信息系统 / RAG 助手</p>
+                    <p>面向 PC 端的人才政策信息管理与实操指南，结合政策检索、地图信息与大模型问答。</p>
                   </td>
                 </tr>
               </table>
             </div>
           </div>
-          <div class="box">
-            <div class="box-title">More Work</div>
+          <div class="box" id="publications">
+            <div class="box-title">代表论文</div>
             <div class="box-body">
               <table class="project-table">
                 <tr>
-                  <td><p class="project-title"><a href="./projects/command-calm/index.html">Command Calm</a></p><p class="project-meta">Research engineering / developer tool</p><p>A terminal tool that makes long-running research and engineering tasks easier to monitor and interpret.</p></td>
+                  <td><p class="project-title"><a href="./projects/academic-collaboration-networks/index.html">Academic collaboration networks study on library and information science community</a></p><p class="project-meta">论文 / Scientometrics 2025</p><p class="project-submeta">Le-Ye Yao, Kai-Yi Chen, Peng-Hui Lyu | Scientometrics, 130(8), 4369–4395</p><p>基于 142,983 篇文献的合作网络分析，研究图书情报学共同体的拓扑结构、连接倾向与社群划分。</p></td>
                 </tr>
                 <tr>
-                  <td><p class="project-title"><a href="./projects/sensor-atlas/index.html">Sensor Atlas</a></p><p class="project-meta">Research prototype / interactive system</p><p>A prototype interface for turning physical sensing input into structured visual feedback and experiment records.</p></td>
+                  <td><p class="project-title"><a href="./projects/smart-senior-care/index.html">Collaboration, Intellectual Basis, and Emerging Trends in Smart Senior Care Research</a></p><p class="project-meta">论文 / Computers, Informatics, Nursing 2025</p><p class="project-submeta">Le-Ye Yao, Kai-Yi Chen, Qiao-Yun Yang, Peng-Hui Lyu | Computers, Informatics, Nursing</p><p>从学术合作、知识基础与研究前沿三个维度，分析全球智慧养老研究的发展态势。</p></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="box">
+            <div class="box-title">更多作品</div>
+            <div class="box-body">
+              <table class="project-table">
+                <tr>
+                  <td><p class="project-title"><a href="./projects/devspace/index.html">DevSpace 远程工作区</a></p><p class="project-meta">效率工具 / 远程 MCP</p><p>在 ChatGPT 中安全操作服务器文件与 Shell 的远程工作区，并提供文件传输与隔离任务能力。</p></td>
                 </tr>
               </table>
             </div>
@@ -134,10 +151,11 @@
         </td>
       </tr>
     </table>
-    <div class="footer">Built from <a href="https://github.com/bobtianqiwei/retroframe" target="_blank" rel="noreferrer">github.com/bobtianqiwei/retroframe</a></div>
+    <div class="footer">本站基于 <a href="https://github.com/bobtianqiwei/retroframe" target="_blank" rel="noreferrer">Retroframe</a> 构建，并根据个人学术与项目经历进行了定制。</div>
   </div>
-  <script>window.retroframeNewsItems = ["Retroframe now demos a more realistic professor or research engineer profile with projects, publications, and academic links.","Use one file for site-wide profile content and one file per project or publication.","The demo includes placeholder company logos and free photos so you can swap in your own work quickly."];</script>
+  <script>window.retroframeNewsItems = ["2026：上线 LIS 前沿文献追踪与智能周报，聚合 46 种图书情报学期刊的开放元数据。","2025：关于图书情报学学术合作网络的研究发表于 Scientometrics。","2025：关于智慧养老研究前沿的科学计量分析发表于 Computers, Informatics, Nursing。"];</script>
   <script src="./assets/js/status-bar.js" defer></script>
   <script src="./assets/js/home.js" defer></script>
+  <script src="./assets/js/language.js" defer></script>
 </body>
 </html>

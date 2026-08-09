@@ -90,6 +90,7 @@ body[data-page="home"] .page {
 
 .topbar {
   display: flex;
+  align-items: center;
   justify-content: flex-end;
   gap: 14px;
   padding: 6px 10px;
@@ -209,6 +210,10 @@ body[data-page="home"] .banner p {
 }
 
 .nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
   padding: 8px 18px;
   border-bottom: 1px solid rgba(118, 145, 187, 0.72);
   background:
@@ -220,12 +225,48 @@ body[data-page="home"] .banner p {
     0 -1px 0 rgba(255, 255, 255, 0.28) inset;
 }
 
+.nav-links {
+  display: flex;
+  flex: 1 1 auto;
+  flex-wrap: wrap;
+  align-items: center;
+  row-gap: 4px;
+}
+
 .nav a {
   margin-right: 14px;
   color: #204978;
   font-weight: 600;
   text-decoration: none;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+.language-switch {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 5px;
+  font-size: 10px;
+  white-space: nowrap;
+}
+
+.language-switch a,
+body[data-page="home"] .language-switch a,
+body[data-page="project"] .language-switch a {
+  margin: 0;
+  padding: 1px 3px;
+  border: 1px solid transparent;
+  text-decoration: none;
+}
+
+.language-switch a[aria-current="page"] {
+  border-color: rgba(255, 255, 255, 0.58);
+  background: rgba(255, 255, 255, 0.16);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.12) inset;
+}
+
+.language-switch span {
+  color: rgba(255, 255, 255, 0.64);
 }
 
 body[data-page="project"] .nav {
@@ -429,11 +470,11 @@ body[data-page="home"] .box-body a {
 
 .profile-photo {
   display: block;
-  width: 100%;
+  width: calc(100% - 16px);
   aspect-ratio: 1 / 1;
   object-fit: cover;
   box-sizing: border-box;
-  margin: 0 0 10px;
+  margin: 8px 8px 10px;
   border: 1px solid #a9bfdc;
   background: #fff;
 }
@@ -548,38 +589,6 @@ body[data-page="project"] .project-gallery-image {
   width: 160px;
   aspect-ratio: 16 / 9;
   object-fit: cover;
-}
-
-.thumb a::after,
-.project-card-thumb::after {
-  content: "";
-  position: absolute;
-  inset: 1px;
-  background:
-    linear-gradient(
-      to bottom,
-      rgba(255, 255, 255, 0.28) 0,
-      rgba(255, 255, 255, 0.1) 2px,
-      rgba(255, 255, 255, 0) 6px
-    ),
-    linear-gradient(
-      to top,
-      rgba(0, 0, 0, 0.16) 0,
-      rgba(0, 0, 0, 0.06) 2px,
-      rgba(0, 0, 0, 0) 6px
-    ),
-    linear-gradient(
-      255deg,
-      rgba(116, 121, 126, 0.12) 0%,
-      rgba(184, 188, 192, 0.15) 24%,
-      rgba(244, 246, 248, 0.2) 50%,
-      rgba(154, 159, 164, 0.1) 51%,
-      rgba(108, 113, 118, 0.12) 100%
-    );
-  background-position: 90% 0;
-  background-size: 120% 120%;
-  pointer-events: none;
-  opacity: 0.9;
 }
 
 .project-title {
@@ -779,6 +788,88 @@ body[data-page="home"] .footer {
 }
 
 @media screen and (max-width: 767px) {
+  body {
+    font-size: 13px;
+    line-height: 1.65;
+  }
+
+  .topbar,
+  .best-viewed,
+  .footer,
+  .project-meta,
+  .project-submeta,
+  .image-description {
+    font-size: 12px;
+  }
+
+  .banner h1,
+  body[data-page="home"] .banner h1,
+  body[data-page="project"] .banner h1 {
+    font-size: 34px;
+  }
+
+  .project-header-title {
+    font-size: 32px;
+    overflow-wrap: anywhere;
+  }
+
+  .banner p,
+  .intro-copy,
+  .intro-copy p,
+  .project-header-headline,
+  .project-richtext,
+  .project-richtext p,
+  .project-title {
+    font-size: 14px;
+  }
+
+  .project-title {
+    line-height: 1.5;
+  }
+
+  .publication-meta p,
+  .box-title {
+    font-size: 13px;
+  }
+
+  .nav {
+    align-items: center;
+    gap: 6px;
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  .nav-links {
+    min-width: 0;
+    flex-wrap: nowrap;
+    gap: 8px;
+    white-space: nowrap;
+  }
+
+  .nav-links > a {
+    margin-right: 0;
+  }
+
+  .nav-links > a:nth-last-child(-n + 3) {
+    display: none;
+  }
+
+  .language-switch {
+    gap: 3px;
+    font-size: 12px;
+  }
+
+  .quick-links-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 6px 12px;
+  }
+
+  .quick-links-grid li {
+    min-width: 0;
+    margin-bottom: 0;
+  }
+
   .content,
   .content tbody,
   .content tr,
@@ -803,5 +894,33 @@ body[data-page="home"] .footer {
   .thumb,
   .thumb img {
     width: 100%;
+  }
+
+  .feature-table,
+  .feature-table tbody,
+  .feature-table tr,
+  .feature-table td {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .feature-table .thumb {
+    padding: 8px 8px 0;
+  }
+
+  #projects .feature-table tr + tr .thumb,
+  #publications .project-table tr + tr td {
+    padding-top: 16px;
+  }
+
+  .feature-table .thumb + td {
+    padding-top: 6px;
+  }
+
+  .profile-photo {
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
   }
 }

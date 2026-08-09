@@ -1,0 +1,125 @@
+<!-- index.html developed by Bob Tianqi Wei -->
+<!DOCTYPE html>
+<html lang="en" data-locale="en">
+<head>
+  <meta charset="utf-8">
+  <title>Talent Policy Service Guide | Kaiyi Chen</title>
+  <meta name="description" content="A desktop-oriented talent-policy information and implementation guide combining policy retrieval, geographic information, and AI-assisted Q&amp;A.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Talent Policy Service Guide | Kaiyi Chen">
+  <meta property="og:description" content="A desktop-oriented talent-policy information and implementation guide combining policy retrieval, geographic information, and AI-assisted Q&amp;A.">
+  <meta property="og:image" content="https://blog.624work.club/assets/images/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Talent Policy Service Guide | Kaiyi Chen">
+  <meta name="twitter:description" content="A desktop-oriented talent-policy information and implementation guide combining policy retrieval, geographic information, and AI-assisted Q&amp;A.">
+  <meta name="twitter:image" content="https://blog.624work.club/assets/images/og.png">
+  <link rel="icon" href="../../../assets/images/kaiyi-mark.png">
+  <link rel="alternate" hreflang="zh-CN" href="../../../projects/talent-policy-guide/index.html">
+  <link rel="alternate" hreflang="en" href="../../../en/projects/talent-policy-guide/index.html">
+  <script>(function(){try{var saved=localStorage.getItem("retroframe-language");var preferred=saved||"en";if(preferred!=="en"){location.replace("../../../projects/talent-policy-guide/index.html");}}catch(error){}})();</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="../../../assets/css/retroframe.css" rel="stylesheet" type="text/css">
+</head>
+<body data-page="project" data-theme="slate-ice">
+  <div class="page">
+    <div class="topbar">
+      <span class="topbar-item"><span class="topbar-text">Chengdu time:</span><img class="topbar-icon" id="local-weather-icon" src="https://cdn.jsdelivr.net/gh/basmilius/weather-icons/production/fill/all/partly-cloudy-day.svg" alt=""><span id="local-status">Loading...</span></span>
+    </div>
+<div class="nav">
+<div class="nav-links">
+  <a href="../../../en/index.html">Home</a>
+  <a href="../../../en/about/index.html">About</a>
+  <a href="../../../en/publications/index.html">Publications</a>
+  <a href="../../../en/projects/index.html">Projects</a>
+  <a href="../../../en/about/index.html#education">CV</a>
+  <a href="https://github.com/ChenKai22567" target="_blank" rel="noreferrer">GitHub</a>
+  <a href="https://orcid.org/0009-0003-5217-7238" target="_blank" rel="noreferrer">ORCID</a>
+  <a href="mailto:kaiyi0365@163.com">Email</a>
+</div>
+<div class="language-switch" aria-label="Language">
+  <a href="../../../projects/talent-policy-guide/index.html" lang="zh-CN" data-language="zh">中文</a>
+  <span aria-hidden="true">/</span>
+  <a href="../../../en/projects/talent-policy-guide/index.html" lang="en" data-language="en" aria-current="page">EN</a>
+</div>
+</div>
+    <table class="content">
+      <tr>
+        <td class="sidebar">
+          <div class="box">
+            <div class="box-title">On this page</div>
+            <div class="box-body mini-nav">
+              <a href="../../../en/index.html">Home</a>
+              <a href="#overview">Overview</a>
+              <a href="#system">System design</a>
+            </div>
+          </div>
+          <div class="box">
+            <div class="box-title">Work information</div>
+            <div class="box-body">
+              <p><strong>Title:</strong> Talent Policy Service Guide</p>
+              <p><strong>Category:</strong> Project</p>
+              <p><strong>Type:</strong> Policy information system / RAG assistant</p>
+              <p><strong>Focus:</strong> Policy knowledge organization, RAG-assisted Q&amp;A, and information visualization</p>
+              <p><strong>Role:</strong> Independent product design and full-stack development</p>
+              
+            </div>
+          </div>
+          <div class="box">
+            <div class="box-title">At a glance</div>
+            <div class="box-body">
+              <p>Kaiyi Chen</p>
+              <p>Dify SSE, DeepSeek API, ECharts, GeoJSON, Node.js</p>
+              <p>2026</p>
+            </div>
+          </div>
+          
+          <div class="box">
+            <div class="box-title">Quick links</div>
+            <div class="box-body">
+              <ul class="plain-list">
+                <li><a href="../../../en/index.html">Back to home</a></li>
+                <li><a href="https://demo.624work.club/" target="_blank" rel="noreferrer">Visit website</a></li>
+                <li><a href="https://github.com/ChenKai22567/624_policy_guide" target="_blank" rel="noreferrer">View source</a></li>
+              </ul>
+            </div>
+          </div>
+        </td>
+        <td class="main">
+          <div class="project-header">
+            <h1 class="project-header-title">Talent Policy Service Guide</h1>
+            <p class="project-header-headline">A structured, searchable, and actionable service guide built from fragmented talent-policy materials.</p>
+          </div>
+          <div class="project-hero-media">
+            <figure class="project-figure">
+              <img src="../../../assets/images/talent-policy-guide.png" loading="lazy" alt="Talent Policy Service Guide interface" class="project-gallery-image">
+            </figure>
+          </div>
+          <div class="box" id="overview">
+            <div class="box-title">Overview</div>
+            <div class="box-body">
+              <div class="project-richtext"><p>The project supports real talent-policy lookup and application scenarios. Rather than merely listing documents, it structures the relationships among eligible applicants, requirements, materials, and procedures.</p><p>Designed primarily for desktop use, the interface brings policy content, geographic information, application guidance, and Q&amp;A into one entry point.</p></div>
+              
+              
+            </div>
+          </div>
+          <div class="box" id="system">
+            <div class="box-title">System design</div>
+            <div class="box-body">
+              <div class="project-richtext"><p>The RAG assistant streams responses through Dify, while a Node.js proxy connects external services. ECharts and GeoJSON present geographic policy information.</p><p>The architecture emphasizes portability, allowing the same information model and interaction pattern to be reused for other policy domains.</p></div>
+              <figure class="project-figure">
+  <img src="../../../assets/images/talent-policy-guide.png" loading="lazy" alt="Screenshot of the Talent Policy Service Guide" class="project-gallery-image">
+  <figcaption class="image-description">Policy information, geographic visualization, and intelligent Q&amp;A are combined in one desktop workspace.</figcaption>
+</figure>
+              
+            </div>
+          </div>
+        </td>
+      </tr>
+    </table>
+    <div class="footer">Built with <a href="https://github.com/bobtianqiwei/retroframe" target="_blank" rel="noreferrer">Retroframe</a> and customized around my research and projects.</div>
+  </div>
+  <script src="../../../assets/js/status-bar.js" defer></script>
+  <script src="../../../assets/js/project-page.js" defer></script>
+  <script src="../../../assets/js/language.js" defer></script>
+</body>
+</html>

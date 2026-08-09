@@ -1,20 +1,49 @@
 // status-bar.js developed by Bob Tianqi Wei
 (function () {
-  var statusNode = document.getElementById("sf-status");
-  var weatherIconNode = document.getElementById("sf-weather-icon");
+  var statusNode = document.getElementById("local-status");
+  var weatherIconNode = document.getElementById("local-weather-icon");
   var weatherText = "";
+  var isEnglish = document.documentElement.lang.toLowerCase().indexOf("en") === 0;
 
   if (!statusNode) {
     return;
   }
 
-  var formatter = new Intl.DateTimeFormat("en-US", {
-    timeZone: "America/Los_Angeles",
-    hour: "numeric",
+  var formatter = new Intl.DateTimeFormat(isEnglish ? "en-GB" : "zh-CN", {
+    timeZone: "Asia/Shanghai",
+    hour: "2-digit",
     minute: "2-digit",
-    hour12: true
+    hour12: false
   });
-  var weatherCodes = {
+  var weatherCodesZh = {
+    0: "晴",
+    1: "大部晴朗",
+    2: "局部多云",
+    3: "阴",
+    45: "雾",
+    48: "雾",
+    51: "小毛毛雨",
+    53: "毛毛雨",
+    55: "较强毛毛雨",
+    61: "小雨",
+    63: "中雨",
+    65: "大雨",
+    66: "冻雨",
+    67: "冻雨",
+    71: "小雪",
+    73: "中雪",
+    75: "大雪",
+    77: "米雪",
+    80: "阵雨",
+    81: "阵雨",
+    82: "强阵雨",
+    85: "阵雪",
+    86: "阵雪",
+    95: "雷暴",
+    96: "雷暴",
+    99: "强雷暴"
+  };
+  var weatherCodesEn = {
     0: "Clear",
     1: "Mostly clear",
     2: "Partly cloudy",
@@ -42,6 +71,7 @@
     96: "Thunderstorm",
     99: "Thunderstorm"
   };
+  var weatherCodes = isEnglish ? weatherCodesEn : weatherCodesZh;
 
   function getWeatherIconName(weatherCode, isDay) {
     if (weatherCode === 0 || weatherCode === 1) {
@@ -117,9 +147,10 @@
     }
 
     currentWeather = data.current_weather;
-    weatherLabel = weatherCodes[currentWeather.weathercode] || "Current conditions";
+    weatherLabel =
+      weatherCodes[currentWeather.weathercode] || (isEnglish ? "Current weather" : "当前天气");
     roundedTemp = Math.round(currentWeather.temperature);
-    weatherText = roundedTemp + "F, " + weatherLabel;
+    weatherText = roundedTemp + "°C" + (isEnglish ? ", " : "，") + weatherLabel;
 
     if (weatherIconNode) {
       weatherIconNode.style.display = "";
@@ -138,7 +169,7 @@
 
   window
     .fetch(
-      "https://api.open-meteo.com/v1/forecast?latitude=37.7749&longitude=-122.4194&current_weather=true&temperature_unit=fahrenheit"
+      "https://api.open-meteo.com/v1/forecast?latitude=30.5728&longitude=104.0668&current_weather=true&temperature_unit=celsius"
     )
     .then(function (response) {
       if (!response.ok) {

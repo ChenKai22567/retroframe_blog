@@ -1,136 +1,118 @@
-// site.js developed by Bob Tianqi Wei
 module.exports = {
   site: {
-    title: "Retroframe",
-    metaTitle: "Retroframe | Retro Portfolio Template for Researchers and Engineers",
+    title: "陈恺义 · Kaiyi Chen",
+    siteUrl: "https://blog.624work.club/",
+    metaTitle: "陈恺义 | 科学计量、知识管理与信息系统",
     metaDescription:
-      "A retro portfolio template for researchers and engineers, with a simple file-based content system for projects, publications, and personal links.",
-    footerLabel: "Built from",
-    footerLinkLabel: "github.com/bobtianqiwei/retroframe",
-    footerLinkHref: "https://github.com/bobtianqiwei/retroframe"
+      "陈恺义的个人主页，记录科学计量学、知识管理、复杂网络分析与信息系统项目。",
+    footerLabel: "本站基于",
+    footerLinkLabel: "Retroframe",
+    footerLinkHref: "https://github.com/bobtianqiwei/retroframe",
+    footerSuffix: "构建，并根据个人学术与项目经历进行了定制。"
   },
   topbar: {
-    prefix: "Template demo time:"
+    prefix: "成都时间"
   },
   banner: {
-    title: "Retroframe",
+    title: "陈恺义",
     subtitle:
-      "A retro academic-style portfolio template for professors, research engineers, and technical builders."
+      "科学计量 · 知识管理 · 复杂网络 · 信息系统"
   },
   navLinks: [
-    { label: "Home", href: "index.html" },
-    { label: "About", href: "about/index.html" },
-    { label: "Publications", href: "publications/index.html" },
-    { label: "Projects", href: "projects/index.html" },
-    { label: "CV", href: "https://example.com/cv" },
-    { label: "Scholar", href: "https://scholar.google.com" },
-    { label: "GitHub", href: "https://github.com/example" },
-    { label: "Department", href: "https://example.edu/people/jianyu-chen" }
+    { label: "首页", href: "index.html" },
+    { label: "关于我", href: "about/index.html" },
+    { label: "学术论文", href: "publications/index.html" },
+    { label: "项目", href: "projects/index.html" },
+    { label: "简历", href: "about/index.html#education" },
+    { label: "GitHub", href: "https://github.com/ChenKai22567" },
+    { label: "ORCID", href: "https://orcid.org/0009-0003-5217-7238" },
+    { label: "邮箱", href: "mailto:kaiyi0365@163.com" }
   ],
   newsItems: [
-    "Retroframe now demos a more realistic professor or research engineer profile with projects, publications, and academic links.",
-    "Use one file for site-wide profile content and one file per project or publication.",
-    "The demo includes placeholder company logos and free photos so you can swap in your own work quickly."
+    "2026：上线 LIS 前沿文献追踪与智能周报，聚合 46 种图书情报学期刊的开放元数据。",
+    "2025：关于图书情报学学术合作网络的研究发表于 Scientometrics。",
+    "2025：关于智慧养老研究前沿的科学计量分析发表于 Computers, Informatics, Nursing。"
   ],
   profile: {
-    image: "assets/images/profile/demo-avatar-unsplash.jpg",
-    imageAlt: "Demo portrait for the Retroframe professor and research engineer template",
-    name: "Dr. Jianyu Chen",
-    title: "Assistant Professor of Computer Science",
-    affiliation: "Example University",
-    location: "San Francisco Bay Area",
+    image: "assets/images/kaiyi-chen.webp",
+    imageAlt: "陈恺义个人头像",
+    name: "陈恺义",
+    title: "信息资源管理硕士",
+    affiliation: "四川大学",
+    location: "中国 · 成都",
     focus:
-      "Human-AI systems, machine learning evaluation, interactive systems, and research infrastructure",
-    availability: "Open to research collaborations, invited talks, and selective research engineering opportunities"
+      "科学计量学、知识管理、复杂网络与社会网络分析、信息系统设计",
+    availability: "欢迎围绕科研数据分析、知识组织与信息系统开展交流"
   },
   quickLinks: [
-    { label: "CV PDF", href: "https://example.com/cv" },
-    { label: "Google Scholar", href: "https://scholar.google.com" },
-    { label: "Semantic Scholar", href: "https://www.semanticscholar.org" },
-    { label: "GitHub Profile", href: "https://github.com/example" },
-    {
-      label: "Department Page",
-      href: "https://example.edu/people/jianyu-chen"
-    },
-    { label: "Email", href: "mailto:jianyu.chen@example.edu" }
+    { label: "个人主页", href: "https://624work.club/" },
+    { label: "GitHub", href: "https://github.com/ChenKai22567" },
+    { label: "查看简历", href: "about/index.html#education" },
+    { label: "发送邮件", href: "mailto:kaiyi0365@163.com" }
   ],
   contact: [
     {
-      label: "Email",
-      value: "jianyu.chen@example.edu",
-      href: "mailto:jianyu.chen@example.edu"
+      label: "邮箱",
+      value: "kaiyi0365@163.com",
+      href: "mailto:kaiyi0365@163.com"
     },
-    { label: "Website", value: "jianyuchen.org", href: "https://jianyuchen.org" },
-    { label: "Scholar", value: "Google Scholar", href: "https://scholar.google.com" },
-    { label: "GitHub", value: "/example", href: "https://github.com/example" },
+    { label: "网站", value: "624work.club", href: "https://624work.club/" },
     {
-      label: "Department",
-      value: "example.edu/people/jianyu-chen",
-      href: "https://example.edu/people/jianyu-chen"
+      label: "ORCID",
+      value: "0009-0003-5217-7238",
+      href: "https://orcid.org/0009-0003-5217-7238"
+    },
+    {
+      label: "GitHub",
+      value: "@ChenKai22567",
+      href: "https://github.com/ChenKai22567"
     }
   ],
   introParagraphs: [
-    "Jianyu Chen is a computer scientist working across human-AI interaction, machine learning systems, and evaluation. His research studies how intelligent tools can support real research and engineering tasks without making those workflows harder to understand or trust.",
-    "He builds interactive systems, research prototypes, and infrastructure for experimentation. His recent work focuses on retrieval, evaluation, agent workflows, and interfaces that help people inspect model behavior in practical settings.",
-    "This template is written as a realistic example for faculty, applied scientists, research engineers, and PhD students who want one site for biography, projects, publications, and contact information."
+    "硕士毕业于四川大学信息资源管理专业，师从姚乐野教授。",
+    "曾获硕士研究生国家奖学金、四川大学优秀毕业研究生。",
+    "主要研究方向为科学计量学与知识管理。"
   ],
   aboutPage: {
     headline:
-      "A longer biography page for researchers, professors, and research engineers who need more than a short homepage introduction.",
+      "研究背景、研究方向与教育经历。",
     sections: [
       {
-        title: "Biography",
+        id: "biography",
+        title: "个人简介",
         paragraphs: [
-          "Jianyu Chen is an assistant professor of computer science whose work sits at the intersection of human-AI interaction, research infrastructure, and machine learning evaluation.",
-          "His research asks how intelligent systems can support real scientific and engineering work without making those workflows harder to inspect, trust, or revise."
+          "硕士毕业于四川大学信息资源管理专业，师从姚乐野教授。",
+          "曾获硕士研究生国家奖学金、四川大学优秀毕业研究生。",
+          "主要研究方向为科学计量学与知识管理。"
         ]
       },
       {
-        title: "Research Focus",
+        id: "research",
+        title: "研究方向",
         paragraphs: [
-          "His recent work focuses on evaluation methods for interactive AI systems, retrieval and memory support for research teams, and interfaces for inspecting agent behavior in practical settings.",
-          "Across these projects, the larger goal is to build systems that are technically capable while still remaining legible to the people who depend on them."
+          "科技情报分析与科学大数据挖掘；复杂网络与社会网络分析；信息系统管理与设计；知识管理。"
         ]
       },
       {
-        title: "Collaboration",
+        id: "education",
+        title: "教育背景",
         paragraphs: [
-          "He works with students, engineers, and researchers on projects involving agentic systems, human-AI workflows, and infrastructure for experimentation.",
-          "This page is included in Retroframe because a strong research portfolio often needs a dedicated About page in addition to a concise homepage summary."
+          "2023.09—2026.06，四川大学图书情报专业，管理学硕士。",
+          "2019.09—2023.06，四川大学信息资源管理专业，管理学学士。"
         ]
       }
     ]
   },
   trustedBy: [
     {
-      name: "Apple",
-      href: "https://www.apple.com",
-      image: "assets/images/logos/apple.svg"
-    },
-    {
-      name: "NVIDIA",
-      href: "https://www.nvidia.com",
-      image: "assets/images/logos/nvidia.svg"
-    },
-    {
-      name: "Google",
-      href: "https://about.google",
-      image: "assets/images/logos/google.svg"
-    },
-    {
-      name: "Stripe",
-      href: "https://stripe.com",
-      image: "assets/images/logos/stripe.svg"
+      name: "陈恺义个人主页",
+      href: "https://624work.club/",
+      image: "assets/images/kaiyi-mark.png"
     },
     {
       name: "GitHub",
-      href: "https://github.com",
+      href: "https://github.com/ChenKai22567",
       image: "assets/images/logos/github.svg"
-    },
-    {
-      name: "Meta",
-      href: "https://about.meta.com",
-      image: "assets/images/logos/meta.svg"
     }
   ]
 };

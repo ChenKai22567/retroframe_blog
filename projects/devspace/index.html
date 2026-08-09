@@ -1,0 +1,125 @@
+<!-- index.html developed by Bob Tianqi Wei -->
+<!DOCTYPE html>
+<html lang="zh-CN" data-locale="zh">
+<head>
+  <meta charset="utf-8">
+  <title>DevSpace 远程工作区 | 陈恺义 · Kaiyi Chen</title>
+  <meta name="description" content="在 ChatGPT 中安全操作服务器文件与 Shell 的远程工作区，并提供文件传输与隔离任务能力。">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="DevSpace 远程工作区 | 陈恺义 · Kaiyi Chen">
+  <meta property="og:description" content="在 ChatGPT 中安全操作服务器文件与 Shell 的远程工作区，并提供文件传输与隔离任务能力。">
+  <meta property="og:image" content="https://blog.624work.club/assets/images/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="DevSpace 远程工作区 | 陈恺义 · Kaiyi Chen">
+  <meta name="twitter:description" content="在 ChatGPT 中安全操作服务器文件与 Shell 的远程工作区，并提供文件传输与隔离任务能力。">
+  <meta name="twitter:image" content="https://blog.624work.club/assets/images/og.png">
+  <link rel="icon" href="../../assets/images/kaiyi-mark.png">
+  <link rel="alternate" hreflang="zh-CN" href="../../projects/devspace/index.html">
+  <link rel="alternate" hreflang="en" href="../../en/projects/devspace/index.html">
+  <script>(function(){try{var saved=localStorage.getItem("retroframe-language");var preferred=saved||"en";if(preferred!=="zh"){location.replace("../../en/projects/devspace/index.html");}}catch(error){}})();</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="../../assets/css/retroframe.css" rel="stylesheet" type="text/css">
+</head>
+<body data-page="project" data-theme="slate-ice">
+  <div class="page">
+    <div class="topbar">
+      <span class="topbar-item"><span class="topbar-text">成都时间：</span><img class="topbar-icon" id="local-weather-icon" src="https://cdn.jsdelivr.net/gh/basmilius/weather-icons/production/fill/all/partly-cloudy-day.svg" alt=""><span id="local-status">加载中...</span></span>
+    </div>
+<div class="nav">
+<div class="nav-links">
+  <a href="../../index.html">首页</a>
+  <a href="../../about/index.html">关于我</a>
+  <a href="../../publications/index.html">学术论文</a>
+  <a href="../../projects/index.html">项目</a>
+  <a href="../../about/index.html#education">简历</a>
+  <a href="https://github.com/ChenKai22567" target="_blank" rel="noreferrer">GitHub</a>
+  <a href="https://orcid.org/0009-0003-5217-7238" target="_blank" rel="noreferrer">ORCID</a>
+  <a href="mailto:kaiyi0365@163.com">邮箱</a>
+</div>
+<div class="language-switch" aria-label="Language">
+  <a href="../../projects/devspace/index.html" lang="zh-CN" data-language="zh" aria-current="page">中文</a>
+  <span aria-hidden="true">/</span>
+  <a href="../../en/projects/devspace/index.html" lang="en" data-language="en">EN</a>
+</div>
+</div>
+    <table class="content">
+      <tr>
+        <td class="sidebar">
+          <div class="box">
+            <div class="box-title">页面目录</div>
+            <div class="box-body mini-nav">
+              <a href="../../index.html">首页</a>
+              <a href="#overview">项目概览</a>
+              <a href="#security">安全与运维</a>
+            </div>
+          </div>
+          <div class="box">
+            <div class="box-title">作品信息</div>
+            <div class="box-body">
+              <p><strong>标题:</strong> DevSpace 远程工作区</p>
+              <p><strong>类别:</strong> 项目</p>
+              <p><strong>类型:</strong> 效率工具 / 远程 MCP</p>
+              <p><strong>方向:</strong> 远程开发、身份认证、文件传输与任务隔离</p>
+              <p><strong>角色:</strong> 部署、集成与使用指南编写</p>
+              
+            </div>
+          </div>
+          <div class="box">
+            <div class="box-title">一览</div>
+            <div class="box-body">
+              <p>陈恺义</p>
+              <p>Next.js, OAuth 2.1 / PKCE, MCP, systemd, Nginx</p>
+              <p>2026</p>
+            </div>
+          </div>
+          
+          <div class="box">
+            <div class="box-title">快速链接</div>
+            <div class="box-body">
+              <ul class="plain-list">
+                <li><a href="../../index.html">返回首页</a></li>
+                <li><a href="https://devspace.624work.club/" target="_blank" rel="noreferrer">查看使用指南</a></li>
+                <li><a href="https://github.com/Waishnav/devspace" target="_blank" rel="noreferrer">上游源码</a></li>
+              </ul>
+            </div>
+          </div>
+        </td>
+        <td class="main">
+          <div class="project-header">
+            <h1 class="project-header-title">DevSpace 远程工作区</h1>
+            <p class="project-header-headline">将 DevSpace 部署为受 OAuth 保护的远程 MCP，使服务器工作区可以被安全地编辑、运行和传输文件。</p>
+          </div>
+          <div class="project-hero-media">
+            <figure class="project-figure">
+              <img src="../../assets/images/devspace-mcp-guide.png" loading="lazy" alt="DevSpace 远程工作区使用指南" class="project-gallery-image">
+            </figure>
+          </div>
+          <div class="box" id="overview">
+            <div class="box-title">项目概览</div>
+            <div class="box-body">
+              <div class="project-richtext"><p>该项目将官方 DevSpace 部署为 OAuth 保护的远程 MCP，支持工作区文件编辑、聊天附件上传、隔离 Shell 任务与短期下载链接。</p><p>使用指南将认证、文件流转和服务器操作流程整理为可复用的部署与使用路径。</p></div>
+              
+              
+            </div>
+          </div>
+          <div class="box" id="security">
+            <div class="box-title">安全与运维</div>
+            <div class="box-body">
+              <div class="project-richtext"><p>认证采用 OAuth 2.1 与 PKCE，下载链接带有 SHA-256 校验并设置有效期；Shell 任务和站点服务通过 systemd 与 Nginx 进行隔离和转发。</p><p>设计目标是在保留远程开发效率的同时，让身份、文件和命令执行的边界更清楚。</p></div>
+              <figure class="project-figure">
+  <img src="../../assets/images/devspace-mcp-guide.png" loading="lazy" alt="DevSpace 远程工作区指南截图" class="project-gallery-image">
+  <figcaption class="image-description">指南覆盖授权、文件传输、任务运行和服务器侧隔离。</figcaption>
+</figure>
+              
+            </div>
+          </div>
+        </td>
+      </tr>
+    </table>
+    <div class="footer">本站基于 <a href="https://github.com/bobtianqiwei/retroframe" target="_blank" rel="noreferrer">Retroframe</a> 构建，并根据个人学术与项目经历进行了定制。</div>
+  </div>
+  <script src="../../assets/js/status-bar.js" defer></script>
+  <script src="../../assets/js/project-page.js" defer></script>
+  <script src="../../assets/js/language.js" defer></script>
+</body>
+</html>
