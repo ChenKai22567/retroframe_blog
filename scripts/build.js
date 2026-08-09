@@ -6,6 +6,7 @@ const repoRoot = path.resolve(__dirname, "..");
 const baseSiteConfig = require(path.join(repoRoot, "content", "site.js"));
 const englishContent = require(path.join(repoRoot, "content", "en.js"));
 const projectsDir = path.join(repoRoot, "content", "projects");
+const stylesheetVersion = "20260809-2";
 let activeLocale = "zh";
 let siteConfig = baseSiteConfig;
 
@@ -436,7 +437,7 @@ function renderHome(relativePath, projects) {
 ${renderSocialMeta(relativePath, siteConfig.site.metaTitle, siteConfig.site.metaDescription)}
 ${renderLanguageHead(relativePath)}
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="${escapeHtml(resolveAsset(relativePath, "assets/css/retroframe.css"))}" rel="stylesheet" type="text/css">
+  <link href="${escapeHtml(resolveAsset(relativePath, "assets/css/retroframe.css"))}?v=${stylesheetVersion}" rel="stylesheet" type="text/css">
 </head>
 <body data-page="home">
   <div class="page">
@@ -624,7 +625,7 @@ function renderCollectionPage(relativePath, options) {
 ${renderSocialMeta(relativePath, `${title} | ${siteConfig.site.title}`, description)}
 ${renderLanguageHead(relativePath)}
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="${escapeHtml(resolveAsset(relativePath, "assets/css/retroframe.css"))}" rel="stylesheet" type="text/css">
+  <link href="${escapeHtml(resolveAsset(relativePath, "assets/css/retroframe.css"))}?v=${stylesheetVersion}" rel="stylesheet" type="text/css">
 </head>
 <body data-page="project" data-theme="slate-ice">
   <div class="page">
@@ -712,7 +713,7 @@ function renderAboutPage(relativePath) {
 ${renderSocialMeta(relativePath, `${copy.aboutHeadline} | ${siteConfig.site.title}`, siteConfig.site.metaDescription)}
 ${renderLanguageHead(relativePath)}
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="${escapeHtml(resolveAsset(relativePath, "assets/css/retroframe.css"))}" rel="stylesheet" type="text/css">
+  <link href="${escapeHtml(resolveAsset(relativePath, "assets/css/retroframe.css"))}?v=${stylesheetVersion}" rel="stylesheet" type="text/css">
 </head>
 <body data-page="project" data-theme="slate-ice">
   <div class="page">
@@ -809,7 +810,7 @@ function renderProjectPage(project) {
 ${renderSocialMeta(relativePath, `${project.title} | ${siteConfig.site.title}`, project.summary)}
 ${renderLanguageHead(relativePath)}
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="${escapeHtml(resolveAsset(relativePath, "assets/css/retroframe.css"))}" rel="stylesheet" type="text/css">
+  <link href="${escapeHtml(resolveAsset(relativePath, "assets/css/retroframe.css"))}?v=${stylesheetVersion}" rel="stylesheet" type="text/css">
 </head>
 <body data-page="project" data-theme="slate-ice">
   <div class="page">

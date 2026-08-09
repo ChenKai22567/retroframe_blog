@@ -117,6 +117,7 @@ body[data-page="home"] .page {
 }
 
 .topbar-link {
+  margin-right: auto;
   color: #5f656b;
   text-decoration: underline;
 }
